@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/layout/NavBar"; 
 // import CustomCursor from "@/components/layout/CustomCursor";
 import KonamiListener from "@/game/KonamiListener";
+import { Analytics } from "@vercel/analytics/next";
 
 // FORCE LOADING: We remove the 'variable' strategy and just load them directly
 const mainFont = Space_Grotesk({ 
@@ -44,6 +45,8 @@ export default function RootLayout({
         <KonamiListener />
 
         <div className="fixed inset-0 z-[-1] opacity-5 pointer-events-none bg-[url('https://grainy-gradients.vercel.app/noise.svg')]"></div>
+        
+        <Analytics />
       
       </body>
     </html>
