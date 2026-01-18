@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight, Github, FolderGit2 } from "lucide-react";
 import Link from "next/link";
+import { Analytics } from "@vercel/analytics/next";
 
 // Projects
 const projects = [
@@ -50,6 +51,7 @@ const projects = [
 
 export default function ProjectsPage() {
   return (
+    <>
     <div className="min-h-screen w-full bg-zinc-950 pt-24 px-6 md:px-12 pb-20 overflow-x-hidden">
       
      
@@ -133,5 +135,7 @@ export default function ProjectsPage() {
       </div>
 
     </div>
+    <Analytics />
+    </>
   );
 }

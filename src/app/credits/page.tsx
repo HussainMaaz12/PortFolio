@@ -3,9 +3,11 @@
 import { motion } from "framer-motion";
 import { Mail, Github, Linkedin, ArrowLeft } from "lucide-react";
 import Link from "next/link";
+import { Analytics } from "@vercel/analytics/next";
 
 export default function CreditsPage() {
   return (
+    <>
     <div className="min-h-screen w-full bg-zinc-950 flex flex-col items-center relative overflow-hidden font-sans text-slate-200">
       
       <div className="fixed inset-0 z-0 opacity-5 pointer-events-none bg-[url('https://grainy-gradients.vercel.app/noise.svg')]"></div>
@@ -102,5 +104,7 @@ export default function CreditsPage() {
       </div>
 
     </div>
+    <Analytics />
+    </>
   );
 }

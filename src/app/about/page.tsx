@@ -2,9 +2,11 @@
 
 import { motion } from "framer-motion";
 import { User, MapPin, Calendar, Mail, GraduationCap, Briefcase, Code2, Terminal } from "lucide-react";
+import { Analytics } from "@vercel/analytics/next";
 
 export default function AboutPage() {
   return (
+    <>
     <div className="min-h-screen w-full bg-zinc-950 pt-24 px-6 md:px-12 pb-20 overflow-x-hidden font-sans text-slate-200">
       
       {/* Background Noise */}
@@ -136,5 +138,7 @@ export default function AboutPage() {
         </div>
       </div>
     </div>
+    <Analytics />
+    </>
   );
 }
