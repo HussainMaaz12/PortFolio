@@ -2,22 +2,20 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-space)", "sans-serif"],
-        retro: ["var(--font-retro)", "monospace"],
+        heading: ["var(--font-space-grotesk)", "sans-serif"],
+        body: ["var(--font-inter)", "sans-serif"],
+        label: ["ui-monospace", "SFMono-Regular", "monospace"],
       },
       colors: {
-        neon: {
-          pink: "#ff00ff",
-          blue: "#00ffff",
-          yellow: "#ffff00",
-        },
+        background: "#0B0B0F",
+        text: "#F5F5F7",
+        accent: "#6C5CE7",
       },
     },
   },
